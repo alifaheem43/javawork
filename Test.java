@@ -1,11 +1,12 @@
- public class Test {
-    public static void main(String[] args) {
-       int x=0;
-	int y=0;
-	 while(x<5){
-	   y=x-y;
-	     System.out.println(x + "" + y +" ");
-	        x=x+1;
-	   }
-	}
+public class AreaOfRectangle {
+   public static void main (String[] args)
+   {
+	   Scanner scanner = new Scanner(System.in);
+	   System.out.println("Enter the length of Rectangle:");
+	   double length = scanner.nextDouble();
+	   System.out.println("Enter the width of Rectangle:");
+	   double width = scanner.nextDouble();
+	   double area = length*width;
+	   System.out.println("Area of Rectangle is:"+area);
    }
+}
