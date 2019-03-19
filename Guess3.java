@@ -1,4 +1,4 @@
-class Guess2{
+class Guess3{
 	public static void main(String args[])
 	  throws java.io.IOException{
 
@@ -11,6 +11,12 @@ class Guess2{
 
 	  if(ch == answer) System.out.println("** Right **");
 	  else  
+	  {
 	  	System.out.println("....Sorry, You're Wrong.");
+
+	  	if(ch < answer) System.out.println("Too Low");
+	  	else
+	  		System.out.println("Too High");
+	  }
 	  }
 }
