@@ -4,7 +4,7 @@ class Vehical
 	int fuelcap; // fuel capacity
 	int mpg;  // fuel consumption in miles per gallon
 }
-class VehicaleDemo
+class VehicalDemo
 {
 	public static void main (String args[])
 	{
