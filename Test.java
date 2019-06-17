@@ -1,12 +1,28 @@
-public class AreaOfRectangle {
-   public static void main (String[] args)
-   {
-	   Scanner scanner = new Scanner(System.in);
-	   System.out.println("Enter the length of Rectangle:");
-	   double length = scanner.nextDouble();
-	   System.out.println("Enter the width of Rectangle:");
-	   double width = scanner.nextDouble();
-	   double area = length*width;
-	   System.out.println("Area of Rectangle is:"+area);
-   }
+class Test { 
+  int a, b; 
+ 
+  Test(int i, int j) { 
+    a = i; 
+    b = j; 
+  }
+  /* Pass an object. Now, ob.a and ob.b in object 
+     used in the call will be changed. */ 
+  void change(Test ob) { 
+    ob.a = ob.a + ob.b; 
+    ob.b = -ob.b; 
+  } 
+} 
+ 
+class PassObjRef { 
+  public static void main(String args[]) { 
+    Test ob = new Test(15, 20); 
+ 
+    System.out.println("ob.a and ob.b before call: " + 
+                       ob.a + " " + ob.b); 
+ 
+    ob.change(ob); 
+ 
+    System.out.println("ob.a and ob.b after call: " + 
+                       ob.a + " " + ob.b); 
+  } 
 }
